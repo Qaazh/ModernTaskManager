@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from './axiosConfig'; // Use the configured Axios instance
 import { TextField, Button, Box } from '@mui/material';
+import { toast } from 'react-toastify';
 
 function TaskForm({ taskToEdit, onSubmit, onCancelEdit }) {
   const [title, setTitle] = useState(taskToEdit ? taskToEdit.title : '');
@@ -22,22 +23,29 @@ function TaskForm({ taskToEdit, onSubmit, onCancelEdit }) {
       const taskData = {
         title,
         description,
-        due_date: dueDate
+        due_date: dueDate || null, // Ensure due_date is null if empty
       };
-
+  
+      console.log('Task Data Sent:', taskData); // Log task data for debugging
+  
       if (taskToEdit) {
-        const response = await axios.put(`http://127.0.0.1:5000/tasks/${taskToEdit.id}`, taskData);
-        onSubmit(response.data);
+        await axios.put(`/tasks/${taskToEdit.id}`, taskData);
+        toast.info('Task updated successfully!');
+        onSubmit();
       } else {
-        const response = await axios.post('http://127.0.0.1:5000/tasks', taskData);
-        onSubmit(response.data);
+        await axios.post('/tasks', taskData);
+        toast.success('Task added successfully!');
+        onSubmit();
       }
+  
       resetForm();
     } catch (error) {
-      console.error('Error saving task:', error);
+      console.error('Error saving task:', error.response || error);
       setError('Failed to save task. Please try again later.');
+      toast.error('Failed to save task. Please try again later.');
     }
   };
+  
 
   const resetForm = () => {
     setTitle('');
@@ -71,9 +79,7 @@ function TaskForm({ taskToEdit, onSubmit, onCancelEdit }) {
         type="date"
         value={dueDate}
         onChange={(e) => setDueDate(e.target.value)}
-        InputLabelProps={{
-          shrink: true,
-        }}
+        InputLabelProps={{ shrink: true }}
         inputProps={{
           min: new Date().toISOString().split('T')[0], // Restrict to today's date and future dates
         }}
@@ -91,5 +97,3 @@ function TaskForm({ taskToEdit, onSubmit, onCancelEdit }) {
 }
 
 export default TaskForm;
-
-
