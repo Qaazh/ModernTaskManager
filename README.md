@@ -57,31 +57,31 @@ A **modern task management application** designed for individuals and teams to e
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/task-manager.git
-   cd task-manager/backend ```
+   cd task-manager/backend 
 2. Create a virtual environment and install dependencies:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt ```
+   pip install -r requirements.txt 
 3. Initialize the database:
    ```bash
    flask db init
    flask db migrate
-   flask db upgrade ```
+   flask db upgrade 
 4. Run the Flask server:
     ```bash
-   flask run ```
+   flask run 
 
 ### **Frontend Setup**
 1. Navigate to the frontend folder:
    ```bash
-   cd ../frontend ```
+   cd ../frontend 
 2. Install dependencies:
    ```bash
-   npm install ```
+   npm install 
 3. Start the development server:
    ```bash
-   npm start ```
+   npm start 
 4. Access the application at http://localhost:3000
 
 ## **Usage**
@@ -122,11 +122,11 @@ Contributions are welcome! Follow these steps to contribute:
 1. Fork the repository.
 2. Create a new branch for your feature:
    ```bash
-   git checkout -b feature-name ```
+   git checkout -b feature-name 
 3. Commit your changes:
    ``` bash
-   git commit -m "Add your message here" ```
+   git commit -m "Add your message here" 
 4. Push to your branch:
    ``` bash
-   git push origin feature-name ```
+   git push origin feature-name 
 5. Create pull request
