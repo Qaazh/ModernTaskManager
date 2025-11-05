@@ -26,7 +26,7 @@ An AI‑first (possible integration), minimal task assistant that clears daily t
 - Privacy‑first: local‑first modes and prompt redaction put users in control.
 
 ## Status
-Under Construnction
+  - ...Under Construnction
 ---
 
 ## ** Available Features**
