@@ -3,8 +3,33 @@
 A **modern task management application** designed for individuals and teams to efficiently organize, track, and manage their daily tasks. Built using **React** for the frontend and **Flask** with **SQLAlchemy** for the backend, this application integrates authentication, filtering, and sorting functionalities for an enhanced user experience.
 
 ---
+The idea:
+An AI‑first (possible integration), minimal task assistant that clears daily to‑do clutter by turning plain‑language intent into prioritized, scheduled tasks and delivering a focused daily plan across web and mobile. It blends fast, offline‑capable tasking with an assistant that summarizes, schedules, reminds, and keeps only the essential visible.
 
-## **Features**
+## Core features
+- Quick capture: add tasks by typing or paste‑dump; AI parses title, labels, due dates, effort, and priority from natural language.
+- Daily focus plan: generates a one‑screen plan with 3–5 must‑dos, time blocks, and defers the rest to protect focus.
+- Smart scheduling: auto‑slots tasks around events, resolves conflicts, and syncs with calendar; users approve edits.
+- Summaries and recall: daily/weekly digests, progress summaries, and “what did I promise?” retrieval from recent context.
+- Essentials‑only UI: search, filter, and sort when needed; default view stays uncluttered and distraction‑free.
+- Works anywhere: PWA offline mode, realtime sync, and push/email notifications with quiet hours.
+- Private by design: on‑device or local‑first options, redaction in prompts, and clear controls over data used by the assistant.
+
+## How (high level)
+- Natural‑language inputs are structured into tasks with fields (title, labels, due date, effort, priority) and placed on the calendar.
+- A lightweight planner composes a daily plan, deferring low‑impact items and proposing time blocks for must‑dos.
+- Background jobs handle reminders, digests, and conflict resolution; users review/approve scheduling changes.
+
+## Why
+- Focus over features: one‑screen daily plan keeps only the essential visible.
+- Frictionless capture: plain‑language quick‑add and paste‑dump reduce overhead.
+- Privacy‑first: local‑first modes and prompt redaction put users in control.
+
+## Status
+Under Construnction
+---
+
+## ** Available Features**
 
 - **User Authentication**:
   - Secure login and registration with JWT-based token authentication.
