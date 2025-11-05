@@ -1,4 +1,6 @@
-# **Task Manager**
+# **Neatly - Modern Task Manager**
+
+<p align="center"><img src="./NeatlyL.png" width="680" alt="Logo"></p>
 
 A **modern task management application** designed for individuals and teams to efficiently organize, track, and manage their daily tasks. Built using **React** for the frontend and **Flask** with **SQLAlchemy** for the backend, this application integrates authentication, filtering, and sorting functionalities for an enhanced user experience.
 
