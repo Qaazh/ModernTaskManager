@@ -1,5 +1,24 @@
 # **Neatly - Modern Task Manager**
 
+<div align="center">
+
+![Last Commit](https://img.shields.io/github/last-commit/Qaazh/ModernTaskManager?label=last%20commit&color=2563eb)
+![Languages](https://img.shields.io/github/languages/count/Qaazh/ModernTaskManager?label=languages&color=f59e0b)
+
+### Built with the tools and technologies:
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-4B5563?style=for-the-badge&logo=javascript&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+
+</div>
+
+---
+
 <p align="center"><img src="./NeatlyL.png" width="680" alt="Logo"></p>
 
 A **modern task management application** designed for individuals and teams to efficiently organize, track, and manage their daily tasks. Built using **React** for the frontend and **Flask** with **SQLAlchemy** for the backend, this application integrates authentication, filtering, and sorting functionalities for an enhanced user experience.
